@@ -544,6 +544,7 @@ def process_images_inner(p: StableDiffusionProcessing) -> Processed:
             # if opts.filter_nsfw:
             #     import modules.safety as safety
             #     x_samples_ddim = modules.safety.censor_batch(x_samples_ddim)
+            print("yo, no censor")
 
             for i, x_sample in enumerate(x_samples_ddim):
                 x_sample = 255. * np.moveaxis(x_sample.cpu().numpy(), 0, 2)

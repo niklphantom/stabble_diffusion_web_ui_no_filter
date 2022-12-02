@@ -35,6 +35,7 @@ def check_safety(x_image):
 
 
 def censor_batch(x):
+    print("wtf it called censor batch")
     # x_samples_ddim_numpy = x.cpu().permute(0, 2, 3, 1).numpy()
     # x_checked_image, has_nsfw_concept = check_safety(x_samples_ddim_numpy)
     # x = torch.from_numpy(x_checked_image).permute(0, 3, 1, 2)
